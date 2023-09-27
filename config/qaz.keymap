@@ -43,7 +43,7 @@
 
         slash_question {
             bindings = <&kp SLASH>;
-            key-positions = <36 35>;
+            key-positions = <27 28>;
             layers = <0>;
         };
 
