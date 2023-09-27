@@ -77,10 +77,10 @@
 
         Alpha {
             bindings = <
-&kp Q       &kp W         &kp E        &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O       &kp P
-&kp A       &hm LALT S    &hm LCTRL D  &hm LSHFT F  &kp G            &kp H      &hm RSHFT J  &hm RCTRL K  &hm RALT L  &kp APOSTROPHE
-&kp Z       &kp X         &kp C        &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT
-&kp K_MUTE  &kp LEFT_GUI  &kp TAB      &lt 1 SPACE  &lt 2 BACKSPACE  &kp ENTER  &kp ESCAPE   &none
+&kp Q             &kp W         &kp E        &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O       &kp P
+&kp A             &hm LALT S    &hm LCTRL D  &hm LSHFT F  &kp G            &kp H      &hm RSHFT J  &hm RCTRL K  &hm RALT L  &kp APOSTROPHE
+&kp Z             &kp X         &kp C        &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT
+&kp K_PLAY_PAUSE  &kp LEFT_GUI  &kp TAB      &lt 1 SPACE  &lt 2 BACKSPACE  &kp ENTER  &kp ESCAPE   &none
             >;
         };
 
