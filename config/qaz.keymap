@@ -51,20 +51,22 @@
 
         nav {
             bindings = <
-&kp PG_UP  &kp HOME        &kp UP_ARROW    &kp END          &none   &none    &none     &kp UP    &none      &kp BSPC
-&kp PG_DN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&trans     &trans          &trans          &trans           &trans  &none    &none     &none     &none
-&trans     &trans          &trans          &lt 3 DEL        &trans  &kp RET  &trans    &kp FSLH
+&kp PG_UP  &mt LEFT_SHIFT HOME  &kp UP_ARROW    &mt LEFT_SHIFT END  &none   &none    &none     &kp UP    &none      &kp BSPC
+&kp PG_DN  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW     &none   &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&trans     &trans               &trans          &trans              &trans  &none    &none     &none     &none
+&trans     &trans               &trans          &lt 3 DEL           &trans  &kp RET  &trans    &kp FSLH
             >;
         };
 
-        layer_3 {
+        Admin {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans  &bootloader
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans
 &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans  &trans  &bt BT_CLR
             >;
+
+            label = "adm";
         };
     };
 };
