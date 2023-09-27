@@ -24,37 +24,81 @@
                 <&kp>,
                 <&kp>;
         };
+        td: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap dance";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&none>,
+                <&none>,
+                <&none>;
+        };
     };
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        slash_question {
+            bindings = <&kp SLASH>;
+            key-positions = <36 35>;
+            layers = <0>;
+        };
+
+        num_add {
+            bindings = <&kp PLUS>;
+            key-positions = <0 1>;
+            layers = <1>;
+        };
+
+        num_subtract {
+            bindings = <&kp KP_SUBTRACT>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
+
+        num_multiply {
+            bindings = <&kp KP_MULTIPLY>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        num_divide {
+            bindings = <&kp KP_DIVIDE>;
+            key-positions = <3 4>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Alpha {
             bindings = <
-&kp Q  &kp W         &kp E        &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O       &kp P
-&kp A  &hm LALT S    &hm LCTRL D  &hm LSHFT F  &kp G            &kp H      &hm RSHFT J  &hm RCTRL K  &hm RALT L  &kp APOSTROPHE
-&kp Z  &kp X         &kp C        &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT
-&kp Q  &kp LEFT_GUI  &kp BSLH     &lt 1 SPACE  &lt 2 BACKSPACE  &kp COLON  &kp SQT      &kp FSLH
+&kp Q       &kp W         &kp E        &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O       &kp P
+&kp A       &hm LALT S    &hm LCTRL D  &hm LSHFT F  &kp G            &kp H      &hm RSHFT J  &hm RCTRL K  &hm RALT L  &kp APOSTROPHE
+&kp Z       &kp X         &kp C        &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT
+&kp K_MUTE  &kp LEFT_GUI  &kp TAB      &lt 1 SPACE  &lt 2 BACKSPACE  &kp ENTER  &kp ESCAPE   &none
             >;
         };
 
         num_sym {
             bindings = <
-&kp N1        &kp N2        &kp N3        &kp N4  &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp PLUS   &kp TILDE
-&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp N9  &kp N0          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL  &kp GRAVE
-&kp PERIOD    &none         &none         &none   &kp LEFT_BRACE  &kp RIGHT_BRACE       &none                  &kp SEMICOLON  &kp COLON
-&bootloader   &sys_reset    &none         &trans  &trans          &kp RET               &trans                 &kp FSLH
+&kp N1        &kp N2        &kp N3        &kp N4      &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp PLUS   &kp TILDE
+&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp N9      &kp N0          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL  &kp GRAVE
+&kp KP_ENTER  &none         &none         &kp KP_DOT  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH               &kp SEMICOLON  &kp COLON
+&bootloader   &sys_reset    &none         &trans      &lt 3 TAB       &kp RET               &trans                 &kp FSLH
             >;
         };
 
         nav {
             bindings = <
-&kp PG_UP  &mt LEFT_SHIFT HOME  &kp UP_ARROW    &mt LEFT_SHIFT END  &none   &none    &none     &kp UP    &none      &kp BSPC
-&kp PG_DN  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW     &none   &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&trans     &trans               &trans          &trans              &trans  &none    &none     &none     &none
-&trans     &trans               &trans          &lt 3 DEL           &trans  &kp RET  &trans    &kp FSLH
+&mt LC(LEFT_SHIFT) PG_UP  &mt LEFT_SHIFT HOME  &kp UP_ARROW    &mt LEFT_SHIFT END  &kp PG_UP  &none    &kp F9  &kp F10   &kp F11  &kp F12
+&mt LEFT_SHIFT PG_DN      &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp PG_DN  &none    &kp F5  &kp F6    &kp F7   &kp F8
+&trans                    &trans               &trans          &trans              &trans     &kp F1   &kp F2  &kp F3    &kp F4
+&none                     &trans               &trans          &lt 3 DEL           &trans     &kp RET  &trans  &kp FSLH
             >;
         };
 
