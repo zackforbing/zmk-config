@@ -70,6 +70,36 @@
             key-positions = <3 4>;
             layers = <1>;
         };
+
+        mko_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <26 17 8>;
+            layers = <0>;
+        };
+
+        qw_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        rg_tab {
+            bindings = <&kp TAB>;
+            key-positions = <3 14>;
+            layers = <0>;
+        };
+
+        ef_shifttab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <2 13>;
+            layers = <0>;
+        };
+
+        spcbkspc_space {
+            bindings = <&kp SPACE>;
+            key-positions = <32 33>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -89,7 +119,7 @@
 &kp N1        &kp N2        &kp N3        &kp N4      &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp PLUS   &kp TILDE
 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp N9      &kp N0          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL  &kp GRAVE
 &kp KP_ENTER  &none         &none         &kp KP_DOT  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH               &kp SEMICOLON  &kp COLON
-&bootloader   &sys_reset    &none         &trans      &lt 3 TAB       &kp RET               &trans                 &kp FSLH
+&bootloader   &sys_reset    &none         &trans      &lt 3 TAB       &kp RET               &trans                 &trans
             >;
         };
 
