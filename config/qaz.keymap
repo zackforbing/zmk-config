@@ -12,6 +12,10 @@
 #define NUM_SYM 1
 #define NAV     2
 
+&lt {
+    quick-tap-ms = <150>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -20,19 +24,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <225>;
             flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <150>;
         };
         td: tap_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "tap dance";
             #binding-cells = <0>;
-            bindings =
-                <&none>,
-                <&none>,
-                <&none>,
-                <&none>;
+            bindings = <&none>, <&none>, <&none>, <&none>;
         };
     };
 };
@@ -106,6 +106,12 @@
             key-positions = <1 10 8 19>;
             layers = <1>;
         };
+
+        wdv_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <1 12 23>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -131,27 +137,27 @@
 
         num_sym {
             bindings = <
-&kp N1        &kp N2        &kp N3        &kp N4      &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp PLUS   &kp TILDE
-&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp N9      &kp N0          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL  &kp GRAVE
-&kp KP_ENTER  &none         &none         &kp KP_DOT  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH               &kp SEMICOLON  &kp COLON
-&bootloader   &sys_reset    &none         &trans      &lt 3 TAB       &kp RET               &trans                 &trans
+&kp N1        &kp N2           &kp N3         &kp N4      &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp PLUS   &kp TILDE
+&kp NUMBER_6  &mt LEFT_ALT N7  &kp NUMBER_8   &kp N9      &kp N0          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL  &kp GRAVE
+&kp KP_ENTER  &none            &kp LS(LG(S))  &kp KP_DOT  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH               &kp SEMICOLON  &kp COLON
+&trans        &trans           &none          &trans      &lt 3 TAB       &kp RET               &trans                 &trans
             >;
         };
 
         nav {
             bindings = <
-&mt LC(LEFT_SHIFT) PG_UP  &mt LEFT_SHIFT HOME  &kp UP_ARROW    &mt LEFT_SHIFT END  &kp PG_UP  &none    &kp F9  &kp F10   &kp F11  &kp F12
-&mt LEFT_SHIFT PG_DN      &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp PG_DN  &none    &kp F5  &kp F6    &kp F7   &kp F8
-&trans                    &trans               &trans          &trans              &trans     &kp F1   &kp F2  &kp F3    &kp F4
-&none                     &trans               &trans          &lt 3 DEL           &trans     &kp RET  &trans  &kp FSLH
+&mt LEFT_CONTROL PG_UP    &mt LEFT_SHIFT HOME  &kp UP_ARROW    &mt LEFT_SHIFT END  &kp PG_UP  &none    &kp F9  &kp F10   &kp F11  &kp F12
+&mt LC(LEFT_SHIFT) PG_DN  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp PG_DN  &none    &kp F5  &kp F6    &kp F7   &kp F8
+&kp LEFT_SHIFT            &trans               &trans          &trans              &trans     &kp F1   &kp F2  &kp F3    &kp F4
+&trans                    &trans               &trans          &lt 3 DEL           &trans     &kp RET  &trans  &kp FSLH
             >;
         };
 
         Admin {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans      &bootloader
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans      &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &sys_reset
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans       &sys_reset
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans       &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &bootloader
 &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans  &trans  &bt BT_CLR
             >;
 
