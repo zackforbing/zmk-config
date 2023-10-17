@@ -137,10 +137,10 @@
 
         num_sym {
             bindings = <
-&kp N1        &kp N2           &kp N3         &kp N4      &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp PLUS   &kp TILDE
-&kp NUMBER_6  &mt LEFT_ALT N7  &kp NUMBER_8   &kp N9      &kp N0          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS      &kp EQUAL  &kp GRAVE
-&kp KP_ENTER  &none            &kp LS(LG(S))  &kp KP_DOT  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH               &kp SEMICOLON  &kp COLON
-&trans        &trans           &none          &trans      &lt 3 TAB       &kp RET               &trans                 &trans
+&kp N1        &kp N2           &kp N3               &kp N4             &kp N5          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS          &kp UNDER                &kp PLUS             &kp TILDE
+&kp NUMBER_6  &hm LEFT_ALT N7  &hm LEFT_CONTROL N8  &hm LEFT_SHIFT N9  &kp N0          &kp LEFT_BRACKET      &hm RIGHT_SHIFT RIGHT_BRACKET  &hm RIGHT_CONTROL MINUS  &hm RIGHT_ALT EQUAL  &kp GRAVE
+&kp KP_ENTER  &none            &kp LS(LG(S))        &kp KP_DOT         &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BSLH                       &kp SEMICOLON            &kp COLON
+&trans        &trans           &none                &trans             &lt 3 TAB       &kp RET               &trans                         &trans
             >;
         };
 
