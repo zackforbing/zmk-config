@@ -119,7 +119,7 @@
             compatible = "zmk,behavior-macro";
             label = "PW";
             #binding-cells = <0>;
-            bindings = <&kp A &kp LS(Y) &kp F &kp LS(P) &kp N2 &kp N7 &kp E &kp X &kp AT &kp N4 &kp PRCNT &kp N4 &kp LS(V) &kp LS(E) &kp LS(F) &kp LS(T) &kp RET>;
+            bindings = <&kp LS(Y) &kp F &kp LS(P) &kp N2 &kp N7 &kp E &kp X &kp AT &kp N4 &kp PRCNT &kp N4 &kp LS(V) &kp LS(E) &kp LS(F) &kp LS(T) &kp RET>;
         };
     };
 
