@@ -141,6 +141,12 @@
             bindings = <&tog 2>;
             key-positions = <11 2 13>;
         };
+
+        screenshot {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -181,10 +187,10 @@
 
         nav {
             bindings = <
-&mt LSHIFT PG_UP            &mt LEFT_ALT HOME  &mt LC(LSHIFT) UP_ARROW  &mt LEFT_ALT END  &kp LS(LA(LC(BACKSLASH)))  &none    &kp F9  &kp F10   &kp F11  &kp F12
-&mt LC(LEFT_CONTROL) PG_DN  &kp LEFT_ARROW     &kp DOWN_ARROW           &kp RIGHT_ARROW   &bksp_del                  &none    &kp F5  &kp F6    &kp F7   &kp F8
-&kp LC(Z)                   &kp LC(X)          &kp LC(C)                &kp LC(V)         &kp LC(LS(K))              &kp F1   &kp F2  &kp F3    &kp F4
-&trans                      &trans             &trans                   &kp LCTRL         &trans                     &kp RET  &trans  &kp FSLH
+&mt LSHIFT PG_UP            &mt LEFT_ALT HOME  &mt LC(LSHIFT) UP_ARROW  &mt LEFT_ALT END  &kp LS(LA(LC(BACKSLASH)))  &none    &kp F9        &kp F10       &kp F11           &kp F12
+&mt LC(LEFT_CONTROL) PG_DN  &kp LEFT_ARROW     &kp DOWN_ARROW           &kp RIGHT_ARROW   &bksp_del                  &none    &hm RSHFT F5  &hm RCTRL F6  &hm RIGHT_ALT F7  &kp F8
+&kp LC(Z)                   &kp LC(X)          &kp LC(C)                &kp LC(V)         &kp LC(LS(K))              &kp F1   &kp F2        &kp F3        &kp F4
+&trans                      &trans             &trans                   &kp LCTRL         &trans                     &kp RET  &trans        &kp FSLH
             >;
         };
 
