@@ -141,12 +141,6 @@
             bindings = <&tog 2>;
             key-positions = <11 2 13>;
         };
-
-        screenshot {
-            bindings = <&kp LG(LS(S))>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -198,7 +192,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans       &sys_reset
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans       &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &bootloader
+&bt BT_CLR    &trans        &trans        &trans        &trans        &trans  &trans  &trans      &bootloader
 &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans  &trans  &bt BT_CLR
             >;
 
