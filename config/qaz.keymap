@@ -16,6 +16,10 @@
     quick-tap-ms = <150>;
 };
 
+&soft_off {
+    hold-time-ms = <5000>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
