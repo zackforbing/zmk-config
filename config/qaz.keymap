@@ -20,6 +20,12 @@
 };
 
 / {
+    chosen {
+        zmk,matrix-transform = &see_saw_big_bar;
+    };
+};
+
+/ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
