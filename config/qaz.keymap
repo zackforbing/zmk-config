@@ -274,6 +274,18 @@
             >;
         };
     };
-};
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        num_sym_win {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+        nav_func_win {
+            if-layers = <1 4>;
+            then-layer = <5>;
+        };
+    };
 };
