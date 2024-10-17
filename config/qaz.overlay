@@ -11,6 +11,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &split_big_bar_layout;
+        /delete-property/ zmk,matrix-transform;
     };
 
     split_bar_transform: keymap_transform0 {
