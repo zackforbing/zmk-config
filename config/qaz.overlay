@@ -15,7 +15,7 @@
         // Other chosen items
     };
 
-    split_bar: matrix_transform0 {
+    split_bar: split_bar_transform {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -27,7 +27,7 @@
         >;
     };
 
-    split_big_bar: matrix_transform1 {
+    split_big_bar: split_big_bar_transform {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -39,7 +39,7 @@
         >;
     };
 
-    big_bar: matrix_transform2 {
+    big_bar: big_bar_transform {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -77,10 +77,10 @@
             ;
     };
 
-    split_big_bar_layout: layout0 {
+    split_big_bar_layout: split_big_bar_layout {
       compatible = "zmk,physical-layout";
       display-name = "Split Big Bar";
-      transform = <&split_big_bar>;
+      transform = <&big_bar_transform>;
       kscan = <&kscan0>;
       keys  //                     w   h    x    y     rot    rx    ry
           = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -124,10 +124,10 @@
           ;
       };
 
-      split_bar_layout: layout1 {
+      split_bar_layout: split_bar_layout {
           compatible = "zmk,physical-layout";
           display-name = "Split Bar";
-          transform = <&split_bar>;
+          transform = <&split_bar_transform>;
           kscan = <&kscan0>;
           keys  //                     w   h    x    y     rot    rx    ry
               = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -173,10 +173,10 @@
               ;
       };
 
-      big_bar_layout: layout2 {
+      big_bar_layout: big_bar_layout {
           compatible = "zmk,physical-layout";
           display-name = "Split Bar";
-          transform = <&big_bar>;
+          transform = <&big_bar_transform>;
           kscan = <&kscan0>;
           keys  //                     w   h    x    y     rot    rx    ry
               = <&key_physical_attrs 100 100    0    0       0     0     0>
