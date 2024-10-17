@@ -21,7 +21,7 @@
 
 &studio_unlock
 
-/ {
+{
     chosen { zmk,matrix-transform = &split_big_bar; };
 };
 
