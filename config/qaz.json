@@ -2,8 +2,8 @@
   "id": "qaz",
   "name": "QAZ",
   "layouts": {
-    "split_space": {
-      "name": "split_space",
+    "split_big_bar": {
+      "name": "split_big_bar",
       "description": "combo backspace? no. no. no. no no no.",
       "layout": [
         { "row": 0, "col": 0, "x": 0, "y": 0 },
