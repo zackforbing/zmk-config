@@ -19,7 +19,7 @@
     quick-tap-ms = <250>;
 };
 
-&studio_unlock {
+\ {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
