@@ -15,7 +15,7 @@
         // Other chosen items
     };
 
-    split_bar: split_bar_transform {
+    split_bar_transform: split_bar_transform {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -27,7 +27,7 @@
         >;
     };
 
-    split_big_bar: split_big_bar_transform {
+    split_big_bar_transform: split_big_bar_transform {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -39,7 +39,7 @@
         >;
     };
 
-    big_bar: big_bar_transform {
+    big_bar_transform: big_bar_transform {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
