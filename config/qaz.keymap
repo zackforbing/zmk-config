@@ -21,10 +21,6 @@
 
 &studio_unlock
 
-{
-    chosen { zmk,matrix-transform = &split_big_bar; };
-};
-
 / {
     behaviors {
         hm: homerow_mods {
