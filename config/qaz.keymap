@@ -19,6 +19,8 @@
     quick-tap-ms = <250>;
 };
 
+&studio_unlock
+
 / {
     chosen { zmk,matrix-transform = &see_saw_big_bar; };
 };
