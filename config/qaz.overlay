@@ -8,6 +8,11 @@
 #include <physical_layouts.dtsi>
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &split_big_bar_layout;
+    };
+
     split_bar: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
