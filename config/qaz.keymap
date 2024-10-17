@@ -20,6 +20,10 @@
 };
 
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &split_big_bar_layout;
+    };
 
     behaviors {
         hm: homerow_mods {
