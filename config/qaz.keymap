@@ -89,6 +89,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+    };
 
     combos {
         compatible = "zmk,combos";
