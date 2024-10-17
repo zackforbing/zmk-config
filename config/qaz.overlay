@@ -15,7 +15,7 @@
         // Other chosen items
     };
 
-    split_bar: keymap_transform_0 {
+    split_bar {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -27,7 +27,7 @@
         >;
     };
 
-    split_big_bar: keymap_transform_1 {
+    split_big_bar {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -39,7 +39,7 @@
         >;
     };
 
-    big_bar: keymap_transform_2 {
+    big_bar {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
@@ -52,7 +52,7 @@
     };
 
 
-    kscan0: kscan_0 {
+    kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
         diode-direction = "col2row";
@@ -77,7 +77,7 @@
             ;
     };
 
-    split_big_bar_layout: split_big_bar_layout {
+    split_big_bar_layout {
       compatible = "zmk,physical-layout";
       display-name = "Split Big Bar";
       transform = <&split_big_bar>;
@@ -124,7 +124,7 @@
           ;
       };
 
-      split_bar_layout: split_bar_layout {
+      split_bar_layout {
           compatible = "zmk,physical-layout";
           display-name = "Split Bar";
           transform = <&split_bar>;
@@ -173,7 +173,7 @@
               ;
       };
 
-      big_bar_layout: big_bar_layout {
+      big_bar_layout {
           compatible = "zmk,physical-layout";
           display-name = "Split Bar";
           transform = <&big_bar>;
@@ -222,7 +222,7 @@
     position_map {
         compatible = "zmk,physical-layout-position-map";
 
-        split_big_bar_posmap: layout1 {
+        split_big_bar_posmap {
             physical-layout = <&split_big_bar_layout>;
             positions
                 = < 0  1  2  3  4  5  6  7  8  9>
@@ -231,7 +231,7 @@
                 , <29 30 31   32    33  34 35 36>
                 ;
         };
-        split_bar_posmap: layout2 {
+        split_bar_posmap {
             physical-layout = <&split_bar_layout>;
             positions
                 = < 0  1  2  3  4  5  6  7  8  9>
@@ -240,7 +240,7 @@
                 , <29 30 31   32    33  34 35 36>
                 ;
         };
-        big_bar_posmap: layout3 {
+        big_bar_posmap {
             physical-layout = <&big_bar_layout>;
             positions
                 = < 0  1  2  3  4  5  6  7  8  9>
