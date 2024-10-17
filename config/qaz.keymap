@@ -22,7 +22,7 @@
 &studio_unlock
 
 / {
-    chosen { zmk,matrix-transform = &see_saw_big_bar; };
+    chosen { zmk,matrix-transform = &split_big_bar; };
 };
 
 / {
