@@ -37,7 +37,7 @@
         >;
     };
 
-    big_bar: keymap_transform_0 {
+    big_bar: keymap_transform_2 {
         compatible = "zmk,matrix-transform";
         columns = <7>;
         rows = <6>;
