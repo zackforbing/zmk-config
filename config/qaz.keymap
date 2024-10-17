@@ -19,7 +19,7 @@
     quick-tap-ms = <250>;
 };
 
-\ {
+/ {
 
     behaviors {
         hm: homerow_mods {
@@ -92,7 +92,7 @@
     };
 };
 
-\ {
+/ {
     combos {
         compatible = "zmk,combos";
     
