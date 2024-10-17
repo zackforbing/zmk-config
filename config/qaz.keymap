@@ -21,7 +21,7 @@
 
 &studio_unlock
 
-/ {
+{
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
