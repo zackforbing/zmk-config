@@ -77,7 +77,7 @@
             ;
     };
 
-    split_big_bar_layout {
+    split_big_bar_layout: layout0 {
       compatible = "zmk,physical-layout";
       display-name = "Split Big Bar";
       transform = <&split_big_bar>;
@@ -124,7 +124,7 @@
           ;
       };
 
-      split_bar_layout {
+      split_bar_layout: layout1 {
           compatible = "zmk,physical-layout";
           display-name = "Split Bar";
           transform = <&split_bar>;
@@ -173,7 +173,7 @@
               ;
       };
 
-      big_bar_layout {
+      big_bar_layout: layout2 {
           compatible = "zmk,physical-layout";
           display-name = "Split Bar";
           transform = <&big_bar>;
