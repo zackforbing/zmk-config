@@ -12,7 +12,6 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &split_big_bar_layout;
-        // Other chosen items
     };
 
     split_bar_transform: split_bar_transform {
@@ -80,7 +79,7 @@
     split_big_bar_layout: split_big_bar_layout {
       compatible = "zmk,physical-layout";
       display-name = "Split Big Bar";
-      transform = <&big_bar_transform>;
+      transform = <&split_big_bar_transform>;
       kscan = <&kscan0>;
       keys  //                     w   h    x    y     rot    rx    ry
           = <&key_physical_attrs 100 100    0    0       0     0     0>
@@ -221,6 +220,7 @@
 
     position_map {
         compatible = "zmk,physical-layout-position-map";
+        complete;
 
         split_big_bar_posmap {
             physical-layout = <&split_big_bar_layout>;
