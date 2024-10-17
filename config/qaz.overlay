@@ -220,7 +220,7 @@ split_big_bar_layout: split_big_bar_layout {
     position_map {
         compatible = "zmk,physical-layout-position-map";
         complete; // Optional, see 'Example non-complete position map'
-        split_big_bar: layout1 {
+        split_big_bar_posmap: layout1 {
             physical-layout = <&split_big_bar_layout>;
             positions
                 = < 0  1  2  3  4  5  6  7  8  9>
@@ -229,7 +229,7 @@ split_big_bar_layout: split_big_bar_layout {
                 , <29 30 31   32    33  34 35 36>
                 ;
         };
-        split_bar: layout2 {
+        split_bar_posmap: layout2 {
             physical-layout = <&split_bar_layout>;
             positions
                 = < 0  1  2  3  4  5  6  7  8  9>
@@ -238,7 +238,7 @@ split_big_bar_layout: split_big_bar_layout {
                 , <29 30 31   32    33  34 35 36>
                 ;
         };
-        big_bar: layout3 {
+        big_bar_posmap: layout3 {
             physical-layout = <&big_bar_layout>;
             positions
                 = < 0  1  2  3  4  5  6  7  8  9>
