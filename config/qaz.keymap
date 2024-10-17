@@ -219,9 +219,7 @@
             label = "JS_DOC";
         };
     };
-};
 
-/ {
     keymap {
         compatible = "zmk,keymap";
     
