@@ -19,9 +19,7 @@
     quick-tap-ms = <250>;
 };
 
-&studio_unlock
-
-{
+&studio_unlock {
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -199,6 +197,12 @@
             bindings = <&kp SLASH>;
             key-positions = <28 27>;
         };
+
+        backslash_pipe {
+            bindings = <&kp BSLH>;
+            key-positions = <28 27>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -208,6 +212,9 @@
             bindings = <&kp FSLH &kp STAR &kp STAR &kp SPACE>;
             label = "JS_DOC";
         };
+    };
+
+    behaviors {
     };
 
     keymap {
